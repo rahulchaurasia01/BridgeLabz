@@ -25,7 +25,7 @@ namespace BridgeLabz
         /// <param name="args"></param>
         static void Main(String[] args)
         {
-            StopWatchProgram.StopWatch();
+            CouponNumbersProgram.CouponNumbers();
         }
     }
 }

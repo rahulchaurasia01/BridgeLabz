@@ -8,8 +8,6 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BridgeLabz.FunctionalProgram.Utils
 {
@@ -78,7 +76,10 @@ namespace BridgeLabz.FunctionalProgram.Utils
             }
         }
 
-
+        /// <summary>
+        /// This Method will give the triplets i.e when added it is equal to zero.
+        /// </summary>
+        /// <param name="arr"></param>
         public void Triplets(int[] arr)
         {
             Console.WriteLine("The Triplets are: ");

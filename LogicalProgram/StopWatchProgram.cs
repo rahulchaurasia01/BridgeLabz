@@ -18,6 +18,10 @@ namespace BridgeLabz.LogicalProgram
         /// </summary>
         public static void StopWatch()
         {
+            Console.WriteLine();
+            Console.WriteLine("----------------StopWatch PROGRAM----------------");
+            Console.WriteLine();
+
             Console.Write("Type 'start' command to start the stopWatch:- ");
             String startStopWatch = Console.ReadLine();
             Stopwatch stopWatch = new Stopwatch();
