@@ -18,6 +18,11 @@ namespace BridgeLabz.BasicCoreProgram
         /// </summary>
         public static void FlipCoin()
         {
+
+            Console.WriteLine();
+            Console.WriteLine("----------------Flip Coin PROGRAM----------------");
+            Console.WriteLine();
+
             Boolean flag;
             int numberOfTimes;
 

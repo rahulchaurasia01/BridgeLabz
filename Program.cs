@@ -9,6 +9,7 @@
 
 using BridgeLabz.BasicCoreProgram;
 using BridgeLabz.FunctionalProgram;
+using BridgeLabz.LogicalProgram;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -24,7 +25,7 @@ namespace BridgeLabz
         /// <param name="args"></param>
         static void Main(String[] args)
         {
-            DistanceProgram.Distance();
+            StopWatchProgram.StopWatch();
         }
     }
 }

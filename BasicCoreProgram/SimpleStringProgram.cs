@@ -22,6 +22,10 @@ namespace BridgeLabz.BasicCoreProgram
         /// </summary>
         public static void SimpleString()
         {
+            Console.WriteLine();
+            Console.WriteLine("----------------SIMPLE STRING PROGRAM----------------");
+            Console.WriteLine();
+
             Console.Write("Enter Your UserName:- ");
             String userName = Console.ReadLine();
 

@@ -20,6 +20,11 @@ namespace BridgeLabz.BasicCoreProgram
         /// </summary>
         public static void HarmonicNumber()
         {
+
+            Console.WriteLine();
+            Console.WriteLine("----------------HARMONIC NUMBER PROGRAM----------------");
+            Console.WriteLine();
+
             Boolean flag;
             int nthHarmonic;
 

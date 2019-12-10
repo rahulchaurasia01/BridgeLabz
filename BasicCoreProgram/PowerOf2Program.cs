@@ -20,6 +20,10 @@ namespace BridgeLabz.BasicCoreProgram
         /// </summary>
         public static void PowerOf2()
         {
+            Console.WriteLine();
+            Console.WriteLine("----------------POWER OF 2 PROGRAM----------------");
+            Console.WriteLine();
+
             Boolean flag;
             int twoRaisedToN;
             do

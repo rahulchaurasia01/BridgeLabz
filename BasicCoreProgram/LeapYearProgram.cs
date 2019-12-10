@@ -20,6 +20,10 @@ namespace BridgeLabz.BasicCoreProgram
         /// </summary>
         public static void LeapYear()
         {
+            Console.WriteLine();
+            Console.WriteLine("----------------LEAP YEAR PROGRAM----------------");
+            Console.WriteLine();
+
             Boolean flag;
             int leapYear;
             do
