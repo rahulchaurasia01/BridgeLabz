@@ -42,7 +42,7 @@ namespace BridgeLabz.BasicCoreProgram
             Utility utils = new Utility();
 
             if(!utils.IsAFourDigitNumber(leapYear))
-                Console.WriteLine("The Entered Year is not a Leap Year.");
+                Console.WriteLine("The Number is not a Four Digit Number.");
             else
             {
                 if(utils.CheckLeapYear(leapYear))
