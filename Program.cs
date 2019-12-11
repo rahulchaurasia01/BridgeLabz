@@ -7,12 +7,12 @@
  */
 
 
+
+using System;
 using BridgeLabz.BasicCoreProgram;
 using BridgeLabz.FunctionalProgram;
+using BridgeLabz.JunitProgram;
 using BridgeLabz.LogicalProgram;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BridgeLabz
 {
@@ -36,24 +36,26 @@ namespace BridgeLabz
                 Console.WriteLine("1st) Basic Core Program");
                 Console.WriteLine("2nd) Functional Program");
                 Console.WriteLine("3rd) Logical Program");
-                Console.WriteLine("4th) Exit.");
+                Console.WriteLine("4th) JUnit Program");
+                Console.WriteLine("5th) Exit.");
                 Console.Write("Enter Your Choice:- ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
-                    case 1:
-                        BasicCoreProgram();
-                        break;
+                    case 1: BasicCoreProgram();
+                            break;
 
                     case 2: FunctionalProgram();
                             break;
 
                     case 3: LogicalProgram();
-                        break;
+                            break;
 
-                    case 4:
-                        flag = true;
-                        break;
+                    case 4: JUnitProgram();
+                            break;
+
+                    case 5: flag = true;
+                            break;
 
                     default:
                         Console.WriteLine("Invalid Choice.");
@@ -182,7 +184,7 @@ namespace BridgeLabz
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("This Program is still not implemented.");
+                        GamblerProgram.Gambler();
                         break;
 
                     case 2:
@@ -208,5 +210,63 @@ namespace BridgeLabz
             } while (exit != 'n');
         }
 
+
+        public static void JUnitProgram()
+        {
+            char exit;
+            do
+            {
+                Console.WriteLine();
+                Console.WriteLine("The JUnit Program Contains the Following list.");
+                Console.WriteLine();
+                Console.WriteLine("1. Empty");
+                Console.WriteLine("2. Empty");
+                Console.WriteLine("3. Temperature Conversion Program");
+                Console.WriteLine("4. E.M.I Program");
+                Console.WriteLine("5. Square Root Program");
+                Console.WriteLine("6. Decimal To Binary Program");
+                Console.WriteLine("7. Binary Program");
+                Console.Write("Enter Your Choice:- ");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine("This Program has still not implemented.");
+                        break;
+
+                    case 2:
+                        Console.WriteLine("This Program has still not implemented.");
+                        break;
+
+                    case 3:
+                        TemperatureConversionProgram.TemperatureConversion();
+                        break;
+
+                    case 4:
+                        EmiCalculatorProgram.EmiCalculator();
+                        break;
+
+                    case 5:
+                        Console.WriteLine("This Program has still not implemented.");
+                        break;
+
+                    case 6:
+                        Console.WriteLine("This Program has still not implemented.");
+                        break;
+
+                    case 7:
+                        Console.WriteLine("This Program has still not implemented.");
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid Choice.");
+                        break;
+                }
+
+                Console.WriteLine();
+                Console.Write("Do You want to Continue [y/n]: ");
+                exit = Convert.ToChar(Console.ReadLine().ToLower());
+            } while (exit != 'n');
+        }
     }
 }

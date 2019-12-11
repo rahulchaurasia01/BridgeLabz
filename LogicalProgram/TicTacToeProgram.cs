@@ -23,7 +23,7 @@ namespace BridgeLabz.LogicalProgram
             Console.WriteLine("----------------TicTacToe PROGRAM----------------");
             Console.WriteLine();
 
-            Char computerSelected = 'O';
+            char computerSelected = 'O';
             char userSelected = 'X';
 
             Console.WriteLine("Player 1 is Computer!!");

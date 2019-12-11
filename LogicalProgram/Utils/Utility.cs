@@ -194,5 +194,39 @@ namespace BridgeLabz.LogicalProgram.Utils
                 return false;
         }
 
+        /// <summary>
+        /// This Method give win, percentage of win and percentage of loss.
+        /// </summary>
+        /// <param name="stake"></param>
+        /// <param name="goal"></param>
+        /// <param name="trail"></param>
+        public void Gambler(int stake, int goal, int trail)
+        {
+            int bet = 0;
+            int win = 0;
+            int cash = 0;
+            int randToken;
+            Random random = new Random();
+
+            for(int i=0;i<trail;i++)
+            {
+                cash = stake;
+                while(cash > 0 && cash <= goal)
+                {
+                    randToken = random.Next(-100, 100);
+                    bet++;
+                    if (randToken < 0)
+                        cash++;
+                    else
+                        cash--;
+                    if (cash == goal)
+                        win++;
+                }
+            }
+            Console.WriteLine("You win {0} out of {1} Trails", win, trail);
+            Console.WriteLine("The Win Percentage of the Gambler is: {0}", win * 100 / trail);
+            Console.WriteLine("The Loss Percentage of the Gambler is {0}", bet * 0.01 / trail);
+        }
+
     }
 }
