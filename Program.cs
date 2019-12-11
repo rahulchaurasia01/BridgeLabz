@@ -7,7 +7,6 @@
  */
 
 
-
 using System;
 using BridgeLabz.BasicCoreProgram;
 using BridgeLabz.FunctionalProgram;
@@ -165,7 +164,7 @@ namespace BridgeLabz
         }
 
         /// <summary>
-        /// This Methof is used to run all the Logical Program.
+        /// This Method is used to run all the Logical Program.
         /// </summary>
         public static void LogicalProgram()
         {
@@ -210,7 +209,9 @@ namespace BridgeLabz
             } while (exit != 'n');
         }
 
-
+        /// <summary>
+        /// This Method is used to run all the JUnit Program
+        /// </summary>
         public static void JUnitProgram()
         {
             char exit;
@@ -231,11 +232,11 @@ namespace BridgeLabz
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("This Program has still not implemented.");
+                        Console.WriteLine("This Program has still not implemented Yet.");
                         break;
 
                     case 2:
-                        Console.WriteLine("This Program has still not implemented.");
+                        Console.WriteLine("This Program has still not implemented Yet.");
                         break;
 
                     case 3:
@@ -247,15 +248,15 @@ namespace BridgeLabz
                         break;
 
                     case 5:
-                        Console.WriteLine("This Program has still not implemented.");
+                        SquareRootProgram.SquareRoot();
                         break;
 
                     case 6:
-                        Console.WriteLine("This Program has still not implemented.");
+                        DecimalToBinaryProgram.DecimalToBinary();
                         break;
 
                     case 7:
-                        Console.WriteLine("This Program has still not implemented.");
+                        Console.WriteLine("This Program has still not implemented Yet.");
                         break;
 
                     default:

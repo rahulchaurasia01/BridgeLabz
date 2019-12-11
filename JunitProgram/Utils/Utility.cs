@@ -52,5 +52,48 @@ namespace BridgeLabz.JunitProgram.Utils
 
             return principalAmount * r / (1 - Math.Pow(1 + r, -n));
         }
+    
+        /// <summary>
+        /// Calculate the square root by using Newton Method.
+        /// </summary>
+        /// <param name="squareRoot"></param>
+        /// <returns></returns>
+        public static double Sqrt(int squareRoot)
+        {
+            double t = squareRoot;
+
+            do
+            {
+                t = squareRoot / t;
+                Console.WriteLine(t);
+            } while (Math.Abs(t - squareRoot / t) < 1e-15 * t) ;
+
+
+                return t;
+        }
+
+        /// <summary>
+        /// Convert Decimal to Binary
+        /// </summary>
+        /// <param name="decimalValue"></param>
+        public static String ToBinary(int decimalValue)
+        {
+            StringBuilder binary = new StringBuilder();
+            do
+            {
+                int remainder = decimalValue % 2;
+                binary.Append(remainder);
+                decimalValue = decimalValue / 2;
+            } while (decimalValue != 0);
+            char[] reverse = binary.ToString().ToCharArray();
+            Array.Reverse(reverse);
+            binary.Clear();
+            foreach (char a in reverse)
+                binary.Append(a);
+            return binary.ToString().PadLeft(8, '0');
+        }
+
+
+
     }
 }
