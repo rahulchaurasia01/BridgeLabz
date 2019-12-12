@@ -220,8 +220,8 @@ namespace BridgeLabz
                 Console.WriteLine();
                 Console.WriteLine("The JUnit Program Contains the Following list.");
                 Console.WriteLine();
-                Console.WriteLine("1. Empty");
-                Console.WriteLine("2. Empty");
+                Console.WriteLine("1. Vending Machine Problem");
+                Console.WriteLine("2. Day Of Week Program");
                 Console.WriteLine("3. Temperature Conversion Program");
                 Console.WriteLine("4. E.M.I Program");
                 Console.WriteLine("5. Square Root Program");
@@ -232,11 +232,11 @@ namespace BridgeLabz
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("This Program has still not implemented Yet.");
+                        VendingMachineProblem.VendingMachine();
                         break;
 
                     case 2:
-                        Console.WriteLine("This Program has still not implemented Yet.");
+                        DayOfWeekProgram.DayOfWeek();
                         break;
 
                     case 3:
@@ -256,7 +256,7 @@ namespace BridgeLabz
                         break;
 
                     case 7:
-                        Console.WriteLine("This Program has still not implemented Yet.");
+                        BinaryProgram.Binary();
                         break;
 
                     default:

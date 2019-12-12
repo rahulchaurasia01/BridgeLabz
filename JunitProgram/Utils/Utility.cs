@@ -62,14 +62,12 @@ namespace BridgeLabz.JunitProgram.Utils
         {
             double t = squareRoot;
 
-            do
+            while(Math.Abs(t - squareRoot / t) > 1e-15 * t)
             {
-                t = squareRoot / t;
+                t = ((squareRoot / t) + t) / 2.0;
                 Console.WriteLine(t);
-            } while (Math.Abs(t - squareRoot / t) < 1e-15 * t) ;
-
-
-                return t;
+            }
+            return t;
         }
 
         /// <summary>
@@ -93,6 +91,83 @@ namespace BridgeLabz.JunitProgram.Utils
             return binary.ToString().PadLeft(8, '0');
         }
 
+        /// <summary>
+        /// Swaping the nibbles and getting the resultant decimal value of it.
+        /// </summary>
+        /// <param name="getBinaryValue"></param>
+        /// <param name="getBinaryValue"></param>
+        public static void SwapAndGetNumber(String getBinaryValue)
+        {
+            String nibble1 = getBinaryValue.Substring(0, getBinaryValue.Length / 2);
+            String nibble2 = getBinaryValue.Substring(getBinaryValue.Length / 2);
+
+            Console.WriteLine("The Two nibbles are: {0}, {1}", nibble1, nibble2);
+
+            String afterSwaping = nibble2 + nibble1;
+            
+            Console.WriteLine("After the swaping nibbles we get: {0}", afterSwaping);
+
+            int temp = Convert.ToInt32(afterSwaping);
+            double addition=0.0, count=0;
+
+            do
+            {
+                double lastNumber = (double)temp % 10;
+                temp /= 10;
+                addition = addition + (lastNumber * Math.Pow(2, count));
+                count++;
+                
+            } while (temp != 0);
+
+            Console.WriteLine("The resultant Decimal Value is: {0}", addition);
+        }
+
+        /// <summary>
+        /// To get the Day Of Week from the date.
+        /// </summary>
+        /// <param name="m"></param>
+        /// <param name="d"></param>
+        /// <param name="y"></param>
+        public static String dayOfWeek(int m, int d, int y)
+        {
+            String[] day = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+
+            int y0 = y - (14 - m) / 12;
+            int x = y0 + (y0 / 4) - (y0 / 100) + (y0 / 400);
+            int m0 = m + 12 * ((14 - m) / 12) - 2;
+            int d0 = (d + x + ((31 * m0) / 12)) % 7;
+
+            return day[d0];
+
+        }
+    
+    
+        /// <summary>
+        /// This Method Give the Minimum number of notes as a change from the vending machine.
+        /// </summary>
+        /// <param name="change"></param>
+        public static int minimumNotesRecursion(int change, int[] rupees, int n, int minimumNotes)
+        {
+
+            if (change == 0)
+                return minimumNotes;
+            else
+            {
+                if (change >= rupees[n - 1])
+                {
+                    change -= rupees[n - 1];
+                    minimumNotes += 1;
+                    Console.WriteLine(rupees[n-1]);
+                    return minimumNotesRecursion(change, rupees, n, minimumNotes);
+                }
+                else
+                {
+                    n -= 1;
+                    return minimumNotesRecursion(change, rupees, n, minimumNotes);
+                }
+            }
+
+        }
 
 
     }
