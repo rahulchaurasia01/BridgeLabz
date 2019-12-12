@@ -8,6 +8,7 @@
 
 
 using System;
+using BridgeLabz.AlgorithmProgram;
 using BridgeLabz.BasicCoreProgram;
 using BridgeLabz.FunctionalProgram;
 using BridgeLabz.JunitProgram;
@@ -36,7 +37,8 @@ namespace BridgeLabz
                 Console.WriteLine("2nd) Functional Program");
                 Console.WriteLine("3rd) Logical Program");
                 Console.WriteLine("4th) JUnit Program");
-                Console.WriteLine("5th) Exit.");
+                Console.WriteLine("5th) Algorithm Program");
+                Console.WriteLine("6th) Exit.");
                 Console.Write("Enter Your Choice:- ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -53,7 +55,10 @@ namespace BridgeLabz
                     case 4: JUnitProgram();
                             break;
 
-                    case 5: flag = true;
+                    case 5: AlgorithmProgram();
+                            break;
+
+                    case 6: flag = true;
                             break;
 
                     default:
@@ -257,6 +262,92 @@ namespace BridgeLabz
 
                     case 7:
                         BinaryProgram.Binary();
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid Choice.");
+                        break;
+                }
+
+                Console.WriteLine();
+                Console.Write("Do You want to Continue [y/n]: ");
+                exit = Convert.ToChar(Console.ReadLine().ToLower());
+            } while (exit != 'n');
+        }
+
+        /// <summary>
+        /// This Method is used to run all the Algorithm Program
+        /// </summary>
+        public static void AlgorithmProgram()
+        {
+            char exit;
+            do
+            {
+                Console.WriteLine();
+                Console.WriteLine("The Algorithm Program Contains the Following list.");
+                Console.WriteLine();
+                Console.WriteLine("1. Permutation Problem");
+                Console.WriteLine("2. Binary Search Program");
+                Console.WriteLine("3. Insertion Sort Program");
+                Console.WriteLine("4. Bubble Program");
+                Console.WriteLine("5. Merge Program");
+                Console.WriteLine("6. Anagram Detection Program");
+                Console.WriteLine("7. Prime Number Program");
+                Console.WriteLine("8. Prime Number that r Anagram and Palindrome Program");
+                Console.WriteLine("9. Generics Search and Sort Program");
+                Console.WriteLine("10. Empty Program");
+                Console.WriteLine("11. Empty Program");
+                Console.WriteLine("12. Empty Program");
+                Console.Write("Enter Your Choice:- ");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        break;
+
+                    case 2:
+                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        break;
+
+                    case 3:
+                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        break;
+
+                    case 4:
+                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        break;
+
+                    case 5:
+                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        break;
+
+                    case 6:
+                        AnagramDetectionProgram.AnagramDetection();
+                        break;
+
+                    case 7:
+                        PrimeNumberProgram.PrimeNumber();
+                        break;
+
+                    case 8:
+                        PrimeNumberAnagramPalindromeProgram.PrimeNumberAnagramPalindrome();
+                        break;
+
+                    case 9:
+                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        break;
+
+                    case 10:
+                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        break;
+
+                    case 11:
+                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        break;
+
+                    case 12:
+                        Console.WriteLine("This Program has not been Implemented Yet!!");
                         break;
 
                     default:
