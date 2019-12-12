@@ -315,7 +315,7 @@ namespace BridgeLabz
                         break;
 
                     case 4:
-                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        BubbleSortProgram.BubbleSort();
                         break;
 
                     case 5:

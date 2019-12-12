@@ -9,7 +9,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace BridgeLabz.AlgorithmProgram.Utils
 {
@@ -56,7 +55,6 @@ namespace BridgeLabz.AlgorithmProgram.Utils
 
         }
     
-        
         /// <summary>
         /// Anagram Detection.
         /// </summary>
@@ -83,5 +81,29 @@ namespace BridgeLabz.AlgorithmProgram.Utils
             return true;
         }
     
+        /// <summary>
+        /// Sort the numbers using Bubble Sort Method.
+        /// </summary>
+        public void Sort(int[] numbers)
+        {
+            int temp;
+
+            for(int i=0;i<numbers.Length;i++)
+            {
+                for(int j=0;j<numbers.Length;j++)
+                {
+                    if(numbers[i] < numbers[j])
+                    {
+                        temp = numbers[i];
+                        numbers[i] = numbers[j];
+                        numbers[j] = temp;
+                    }
+                }
+            }
+        }
+
+
+
+
     }
 }
