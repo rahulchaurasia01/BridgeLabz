@@ -289,8 +289,8 @@ namespace BridgeLabz
                 Console.WriteLine("1. Permutation Problem");
                 Console.WriteLine("2. Binary Search for String Program");
                 Console.WriteLine("3. Insertion Sort Program");
-                Console.WriteLine("4. Bubble Program");
-                Console.WriteLine("5. Merge Program");
+                Console.WriteLine("4. Bubble Sort Program");
+                Console.WriteLine("5. Merge Sort Program");
                 Console.WriteLine("6. Anagram Detection Program");
                 Console.WriteLine("7. Prime Number Program");
                 Console.WriteLine("8. Prime Number that are Anagram and Palindrome Program");
@@ -319,7 +319,7 @@ namespace BridgeLabz
                         break;
 
                     case 5:
-                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        MergeSortProgram.MergeSort();
                         break;
 
                     case 6:

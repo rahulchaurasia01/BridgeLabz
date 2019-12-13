@@ -1,5 +1,5 @@
 ﻿/*
- *  Purpose:  Program for Insertion Sort.
+ *  Purpose:  Program for Merge Sort.
  * 
  *  @author  Rahul Chaurasia
  *  @version 1.0
@@ -11,16 +11,15 @@ using BridgeLabz.AlgorithmProgram.Utils;
 
 namespace BridgeLabz.AlgorithmProgram
 {
-    class InsertionSortProgram
+    class MergeSortProgram
     {
         /// <summary>
-        /// This Method is used to test the InsertionSortProgram Class.
+        /// This method is used to test the MergeSortProgram Class.
         /// </summary>
-        public static void InsertionSort()
+        public static void MergeSort()
         {
-
             Console.WriteLine();
-            Console.WriteLine("----------------Insertion Sort PROGRAM----------------");
+            Console.WriteLine("----------------Merge Sort PROGRAM----------------");
             Console.WriteLine();
 
             int n;
@@ -36,12 +35,11 @@ namespace BridgeLabz.AlgorithmProgram
 
             Utility utils = new Utility();
 
-            utils.InsertionSort(a);
+            utils.sort(a, 0, a.Length - 1);
 
-            Console.Write("By using Insertion Sort: ");
+            Console.Write("By using Merge Sort: ");
             foreach (int i in a)
                 Console.Write(i + " ");
-
         }
     }
 }
