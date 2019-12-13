@@ -6,8 +6,8 @@
  *  @since   13-12-2019
  */
 
-using BridgeLabz.AlgorithmProgram.Utils;
 using System;
+using BridgeLabz.AlgorithmProgram.Utils;
 
 namespace BridgeLabz.AlgorithmProgram
 {

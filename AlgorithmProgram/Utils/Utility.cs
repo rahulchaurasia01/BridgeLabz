@@ -171,6 +171,28 @@ namespace BridgeLabz.AlgorithmProgram.Utils
             return s;
         }
     
-    
+        /// <summary>
+        /// This method is used to sort the array of numbers by uing Insertion Sort.
+        /// </summary>
+        /// <param name="numbers"></param>
+        public void InsertionSort(int[] numbers)
+        {
+           
+            for(int i=1;i< numbers.Length;i++)
+            {
+                int temp = numbers[i];
+                int j = i - 1;
+
+                while(j >= 0 && numbers[j] > temp)
+                {
+                    numbers[j + 1] = numbers[j];
+                    j = j - 1;
+                }
+
+                numbers[j + 1] = temp;
+            }
+        }
+
+
     }
 }

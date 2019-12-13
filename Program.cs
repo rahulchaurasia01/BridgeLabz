@@ -311,7 +311,7 @@ namespace BridgeLabz
                         break;
 
                     case 3:
-                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        InsertionSortProgram.InsertionSort();
                         break;
 
                     case 4:
