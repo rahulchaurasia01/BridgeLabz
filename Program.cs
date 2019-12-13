@@ -287,13 +287,13 @@ namespace BridgeLabz
                 Console.WriteLine("The Algorithm Program Contains the Following list.");
                 Console.WriteLine();
                 Console.WriteLine("1. Permutation Problem");
-                Console.WriteLine("2. Binary Search Program");
+                Console.WriteLine("2. Binary Search for String Program");
                 Console.WriteLine("3. Insertion Sort Program");
                 Console.WriteLine("4. Bubble Program");
                 Console.WriteLine("5. Merge Program");
                 Console.WriteLine("6. Anagram Detection Program");
                 Console.WriteLine("7. Prime Number Program");
-                Console.WriteLine("8. Prime Number that r Anagram and Palindrome Program");
+                Console.WriteLine("8. Prime Number that are Anagram and Palindrome Program");
                 Console.WriteLine("9. Generics Search and Sort Program");
                 Console.WriteLine("10. Empty Program");
                 Console.WriteLine("11. Empty Program");
@@ -303,11 +303,11 @@ namespace BridgeLabz
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        PermutationStringProgram.PermutationString();
                         break;
 
                     case 2:
-                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        BinarySearchStringProgram.BinarySearchString();
                         break;
 
                     case 3:
@@ -335,7 +335,7 @@ namespace BridgeLabz
                         break;
 
                     case 9:
-                        Console.WriteLine("This Program has not been Implemented Yet!!");
+                        GenericsProgram.Generics();
                         break;
 
                     case 10:

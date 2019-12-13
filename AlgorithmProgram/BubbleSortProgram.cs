@@ -19,7 +19,7 @@ namespace BridgeLabz.AlgorithmProgram
         public static void BubbleSort()
         {
             Console.WriteLine();
-            Console.WriteLine("---------------Buuble Sort PROGRAM----------------");
+            Console.WriteLine("---------------Bubble Sort PROGRAM----------------");
             Console.WriteLine();
 
             int n;

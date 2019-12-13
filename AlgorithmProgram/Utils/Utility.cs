@@ -102,8 +102,75 @@ namespace BridgeLabz.AlgorithmProgram.Utils
             }
         }
 
+        /// <summary>
+        /// This method uses generics for BinarySearch.
+        /// </summary>
+        /// <param name="list"></param>
+        /// <param name="search"></param>
+        /// <returns></returns>
+        public Boolean BinarySearch<T>(T[] list, T search)
+        {
+            int n = list.Length-1;
+            int first = 0;
+            while(first <= n)
+            {
+                int m = first + (n - first) / 2;
 
+                int result = (list[m].ToString()).CompareTo(search.ToString());
 
+                if (result == 0)
+                    return true;
 
+                if (result < 0)
+                    first = m + 1;
+                else
+                    n = m - 1;
+
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// This method is used to do the permutation of the String.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        public static void StringPermutation(string str, int start, int end)
+        {
+            if (start == end)
+                Console.WriteLine(str);   
+            else
+            {
+                for (int i = start; i <= end; i++)
+                {
+                    str = Swap(str, start, i);
+                    StringPermutation(str, start + 1, end);
+                    str = Swap(str, start, i);
+                }
+            }
+        }
+
+        /// <summary>
+        /// This method is a part of the StringPermutation method. It is used to
+        /// swap the character.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="i"></param>
+        /// <param name="j"></param>
+        /// <returns></returns>
+        public static String Swap(String a, int i, int j)
+        {
+            char temp;
+            char[] charArray = a.ToCharArray();
+            temp = charArray[i];
+            charArray[i] = charArray[j];
+            charArray[j] = temp;
+            string s = new string(charArray);
+            return s;
+        }
+    
+    
     }
 }
