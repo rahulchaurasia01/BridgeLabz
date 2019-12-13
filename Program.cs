@@ -295,9 +295,8 @@ namespace BridgeLabz
                 Console.WriteLine("7. Prime Number Program");
                 Console.WriteLine("8. Prime Number that are Anagram and Palindrome Program");
                 Console.WriteLine("9. Generics Search and Sort Program");
-                Console.WriteLine("10. Empty Program");
+                Console.WriteLine("10. Question to find your Problem");
                 Console.WriteLine("11. Empty Program");
-                Console.WriteLine("12. Empty Program");
                 Console.Write("Enter Your Choice:- ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -343,10 +342,6 @@ namespace BridgeLabz
                         break;
 
                     case 11:
-                        Console.WriteLine("This Program has not been Implemented Yet!!");
-                        break;
-
-                    case 12:
                         Console.WriteLine("This Program has not been Implemented Yet!!");
                         break;
 
