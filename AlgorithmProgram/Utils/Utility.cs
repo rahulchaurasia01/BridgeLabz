@@ -193,7 +193,6 @@ namespace BridgeLabz.AlgorithmProgram.Utils
             }
         }
 
-
         /// <summary>
         /// This method is used to merged the array.
         /// </summary>
@@ -276,6 +275,41 @@ namespace BridgeLabz.AlgorithmProgram.Utils
                 Console.WriteLine("rahullll");
                 // Merge the sorted halves 
                 merge(arr, l, m, r);
+            }
+        }
+
+
+        /// <summary>
+        /// Optimally completing the task.
+        /// </summary>
+        /// <param name="d"></param>
+        /// <param name="m"></param>
+        public void TaskCompletion(int[] d, int[] m)
+        {
+            int n = m.Length;
+
+            int[] temp = new int[n];
+            int[] dTemp = new int[n];
+            int[] mTemp = new int[n];
+            int result = 0, count=0, time = 1, mPos, mMin;
+
+            for(int i=0;i<n;i++)
+            {
+                for(int j = 0; j <= i;j++)
+                {
+                    dTemp[j] = d[j];
+                    mTemp[j] = m[j];
+                }
+                mMin = mTemp[0];
+                mPos = 0;
+                for(int j=0;j<=i;j++)
+                {
+                    if(mMin < mTemp[j])
+                    {
+                        mPos = j;
+                        mMin = mTemp[j];
+                    }
+                }
             }
         }
 
